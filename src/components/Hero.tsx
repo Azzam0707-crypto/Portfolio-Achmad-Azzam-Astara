@@ -4,15 +4,8 @@ import portraitImage from '@/assets/azzam-portrait.png'
 export function Hero() {
   return (
     <section className="relative h-screen w-full overflow-hidden">
-      {/* Base layer - dark abstract backdrop */}
-      <div className="absolute inset-0 w-full h-full">
-        <img
-          src="/hero-abstract.jpg"
-          alt="Background"
-          className="w-full h-full object-cover object-center"
-        />
-        <div className="absolute inset-0 bg-black/70" />
-      </div>
+      {/* Base layer - solid black backdrop */}
+      <div className="absolute inset-0 w-full h-full bg-black" />
 
       {/* Portrait - centered, full height, like the original template */}
       <motion.div
